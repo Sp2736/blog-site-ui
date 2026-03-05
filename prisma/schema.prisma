@@ -1,0 +1,32 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("POSTGRES_PRISMA_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING") 
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  category  String   
+  content   String
+  likes     Int      @default(0)
+  url       String   @unique
+  createdAt DateTime @default(now())
+  
+  image     String?  
+
+  views     View[]
+}
+
+model View {
+  id        String   @id @default(cuid())
+  postId    String
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  timestamp DateTime @default(now())
+}
