@@ -43,11 +43,11 @@ export const CATEGORY_COLORS: Record<string, CategoryColorConfig> = {
     border: "border-orange-500/30",
     hex: "#f97316",
   },
-  Yapping: {
-    bg: "bg-orange-500/10",
-    text: "text-orange-500",
-    border: "border-orange-500/30",
-    hex: "#f97316",
+  "Yapping": {
+    bg: "bg-amber-500/10", // Shifted to Amber for a "warm talkative" feel
+    text: "text-amber-500",
+    border: "border-amber-500/30",
+    hex: "#f59e0b",
   },
   "University Diaries": {
     bg: "bg-purple-500/10",
@@ -56,10 +56,10 @@ export const CATEGORY_COLORS: Record<string, CategoryColorConfig> = {
     hex: "#a855f7",
   },
   "Meme Stash": {
-    bg: "bg-yellow-500/10",
+    bg: "bg-yellow-400/10",
     text: "text-yellow-500",
-    border: "border-yellow-500/30",
-    hex: "#eab308",
+    border: "border-yellow-400/30",
+    hex: "#facc15",
   },
   "Open Source & Setups": {
     bg: "bg-cyan-500/10",
@@ -74,16 +74,16 @@ export const CATEGORY_COLORS: Record<string, CategoryColorConfig> = {
     hex: "#ec4899",
   },
   "Hot Takes": {
-    bg: "bg-red-500/10",
-    text: "text-red-500",
-    border: "border-red-500/30",
-    hex: "#ef4444",
+    bg: "bg-rose-500/10", // Rose is a "sharper" red for spicy takes
+    text: "text-rose-500",
+    border: "border-rose-500/30",
+    hex: "#f43f5e",
   },
   "Need to Say It": {
-    bg: "bg-red-500/10",
-    text: "text-red-500",
-    border: "border-red-500/30",
-    hex: "#ef4444",
+    bg: "bg-red-600/10", // Deeper red for urgency/importance
+    text: "text-red-600",
+    border: "border-red-600/30",
+    hex: "#dc2626",
   },
 };
 
