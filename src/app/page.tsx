@@ -1,10 +1,8 @@
-export const dynamic = "force-dynamic";
-import { getPosts } from '@/lib/posts';
-import { BlogFeed } from '@/components/blog-feed';
-import { BlogPost } from '@/lib/types';
+import { getPosts } from "@/lib/posts";
+import { BlogFeed } from "@/components/blog-feed";
 
-export default async function Home() {
-  const posts: BlogPost[] = await getPosts();
+export default function Home() {
+  const posts = getPosts();
 
   return (
     <div className="container mx-auto px-4 py-8">

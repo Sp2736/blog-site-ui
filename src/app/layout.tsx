@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Toaster } from "@/components/ui/toaster";
-import { cookies } from "next/headers"; // Read cookies on the server
 
 const fontBody = Inter({
   subsets: ["latin"],
@@ -17,6 +16,7 @@ const fontHeadline = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wander-n-wonder.vercel.app"),
   title: {
     default: "Wander-n-Wonder | Swayam Patel",
     template: "%s | Wander-n-Wonder",
@@ -57,13 +57,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // SECURE SERVER-SIDE CHECK
-  // It checks against an environment variable first, but falls back to string just in case there's no .env
-  // Hence prohibit client-side from allowing to read cookies at all
-  const cookieStore = cookies();
-  const token = cookieStore.get("admin_token")?.value;
-  const isAdmin = !!(token && token === process.env.ADMIN_SECRET);
-
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -77,7 +70,7 @@ export default function RootLayout({
         >
           <div className="min-h-screen w-full">
             {/* Pass the result directly to the header */}
-            <Header isAdmin={isAdmin} />
+            <Header />
             <main>{children}</main>
           </div>
           <Toaster />

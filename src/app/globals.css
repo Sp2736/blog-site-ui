@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "highlight.js/styles/github-dark.css";
 
 @layer base {
   /* LIGHT THEME */
@@ -24,7 +25,9 @@
     --ring: 240 10% 3.9%;
     --radius: 0.75rem;
   }
-
+html {
+  scroll-behavior: smooth;
+}
   /* DARK THEME */
   .dark {
     --background: 240 10% 3.9%;
@@ -117,4 +120,20 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.prose pre {
+  border-radius: 10px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.prose h2:hover .anchor {
+  opacity: 1;
+}
+
+.anchor {
+  opacity: 0;
+  margin-left: 6px;
+  font-size: 0.8em;
 }
