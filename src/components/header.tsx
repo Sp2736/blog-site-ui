@@ -45,7 +45,7 @@ export function Header({ isAdmin }: { isAdmin?: boolean }) {
               </Link>
 
               <a
-                href="https://github.com/Sp2736/wander-n-wonder"
+                href="https://github.com/Sp2736/blog-site-ui"
                 target="_blank"
                 rel="noreferrer"
               >

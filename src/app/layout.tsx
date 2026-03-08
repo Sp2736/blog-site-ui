@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
 
 const fontBody = Inter({
@@ -75,6 +76,7 @@ export default function RootLayout({
           </div>
           <Toaster />
         </ThemeProvider>
+        <Footer/>
       </body>
     </html>
   );
