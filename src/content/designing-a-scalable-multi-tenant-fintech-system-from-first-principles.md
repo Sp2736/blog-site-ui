@@ -1,4 +1,8 @@
-# FinIQ: Engineering a Multi-Tenant FinTech System from Interface to Intelligence
+---
+title: FinIQ: Engineering a Multi-Tenant FinTech System from Interface to Intelligence
+date: March 8, 2026
+category: Engineering Systems
+---
 
 There comes a point in every developer’s journey where the nature of work changes.
 
