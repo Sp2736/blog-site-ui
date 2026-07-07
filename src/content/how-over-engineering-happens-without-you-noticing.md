@@ -1,6 +1,6 @@
 ---
 title: How Overengineering Happens Without You Noticing
-date: March 8, 2026
+date: April 10, 2026
 category: Brain Dumps
 ---
 

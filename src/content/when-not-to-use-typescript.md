@@ -1,6 +1,6 @@
 ---
 title: When NOT to Use TypeScript
-date: March 8, 2026
+date: June 8, 2026
 category: Tech & Code
 ---
 

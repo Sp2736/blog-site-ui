@@ -1,6 +1,6 @@
 ---
 title: The Difference Between Studying for Marks vs Understanding Concepts
-date: March 8, 2026
+date: March 27, 2026
 category: University Diaries
 ---
 

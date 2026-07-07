@@ -1,6 +1,6 @@
 ---
 title: Why Some Problems Cannot Be Solved Efficiently (Intro to NP Problems)
-date: March 8, 2026
+date: March 29, 2026
 category: Algorithm Alley
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: The Moment You Realize Code Is Just Structured Thinking
-date: March 8, 2026
+date: February 10, 2026
 category: Brain Dumps
 ---
 

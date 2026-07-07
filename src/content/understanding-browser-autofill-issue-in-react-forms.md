@@ -1,6 +1,6 @@
 ---
 title: Understanding a Browser Autofill Issue in React Forms
-date: March 8, 2026
+date: February 19, 2026
 category: Tech & Code
 ---
 

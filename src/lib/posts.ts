@@ -13,9 +13,9 @@ import rehypeStringify from "rehype-stringify"
 const postsDirectory = path.join(process.cwd(), "src/content");
 
 export function getPosts() {
-  const files = fs.readdirSync(postsDirectory);
+  const files = fs.readdirSync(postsDirectory).filter((f) => f.endsWith(".md"));
 
-  return files.map((filename) => {
+  const posts = files.map((filename) => {
     const filePath = path.join(postsDirectory, filename);
     const fileContents = fs.readFileSync(filePath, "utf8");
 
@@ -26,13 +26,19 @@ export function getPosts() {
     const stats = readingTime(content);
 
     return {
+      id: data.id || slug,
       title: data.title,
       slug,
       date: data.date,
       category: data.category,
       readingTime: stats.text,
+      content,
     };
   });
+
+  return posts.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 }
 
 export async function getPostBySlug(slug: string) {
@@ -48,11 +54,11 @@ export async function getPostBySlug(slug: string) {
   const { data, content } = matter(fileContents);
 
   const processedContent = await remark()
-  .use(remarkSlug)
-  .use(remarkAutolinkHeadings)
-  .use(remarkRehype)
-  .use(rehypeHighlight)
-  .use(rehypeStringify)
+  .use(remarkSlug as any)
+  .use(remarkAutolinkHeadings as any)
+  .use(remarkRehype as any)
+  .use(rehypeHighlight as any)
+  .use(rehypeStringify as any)
   .process(content)
 
   const stats = readingTime(content);
@@ -67,7 +73,7 @@ export async function getPostBySlug(slug: string) {
 
   return {
     title: data.title,
-    slug: data.slug,
+    slug,
     date: data.date,
     category: data.category,
     content: processedContent.toString(),

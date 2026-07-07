@@ -1,6 +1,6 @@
 ---
 title: Why setState in React Is Not Instant
-date: March 8, 2026
+date: May 18, 2026
 category: Tech & Code
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Stop Copy-Pasting Code Without Understanding It
-date: March 8, 2026
+date: May 3, 2026
 category: Need To Say It
 ---
 

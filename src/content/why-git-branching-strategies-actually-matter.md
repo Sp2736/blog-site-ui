@@ -1,6 +1,6 @@
 ---
 title: Why Git Branching Strategies Actually Matter
-date: March 8, 2026
+date: March 12, 2026
 category: Hot Takes
 ---
 

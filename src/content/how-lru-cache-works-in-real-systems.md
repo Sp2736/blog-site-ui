@@ -1,6 +1,6 @@
 ---
 title: How LRU Cache Works in Real Systems
-date: March 8, 2026
+date: March 3, 2026
 category: Algorithm Alley
 ---
 

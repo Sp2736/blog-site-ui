@@ -1,6 +1,6 @@
 ---
 title: Why Debugging Is the Real Programming Skill
-date: March 8, 2026
+date: April 20, 2026
 category: Brain Dumps
 ---
 
