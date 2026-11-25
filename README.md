@@ -34,3 +34,12 @@ Instead of relying on standard, cookie-cutter templates like WordPress or Medium
 
 ---
 *Built with passion, late-night debugging, and a love for building things from scratch.*
+
+
+---
+
+## 📦 Project Snapshot
+
+<!--ARCHIVE_STATS_START-->
+<!-- auto-generated — do not edit manually -->
+<!--ARCHIVE_STATS_END-->
